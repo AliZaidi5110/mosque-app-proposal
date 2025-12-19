@@ -1,4 +1,3 @@
-import React from 'react';
 import {
     TrendingUp,
     Users,
@@ -175,21 +174,20 @@ function App() {
                     <p className="subtitle">Strategic Investment Proposal</p>
                     <div className="investment-highlight">
                         <div className="investment-amount">£2,400</div>
-                        <p>One-time investment • Lifetime value • Complete ownership</p>
+                        <p>Development investment • Professional solution • Custom built</p>
                     </div>
                 </div>
 
                 <div className="section">
                     <h2><Target /> Executive Summary</h2>
                     <p>
-                        The £2,400 proposed for the mosque mobile application is not a development expense;
-                        it is a <strong>capital investment</strong> in your mosque's operational efficiency,
-                        financial sustainability, community engagement, and long-term relevance.
+                        The £2,400 proposed for the mosque mobile application is a <strong>development investment</strong> 
+                        that creates a comprehensive digital solution for your mosque's operational efficiency, 
+                        financial sustainability, community engagement, and long-term growth.
                     </p>
                     <p>
-                        This investment creates a permanent digital asset that works for your mosque
-                        every day, every month, and every year, with measurable returns in communication
-                        efficiency, donation growth, and community trust.
+                        This investment delivers a complete, custom-built mobile application with 13 integrated 
+                        modules that will transform how your mosque operates and engages with the community.
                     </p>
                 </div>
 
@@ -428,9 +426,9 @@ function App() {
                     <h2>Complete Investment Justification</h2>
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '20px', margin: '30px 0' }}>
                         <div>
-                            <div style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#ffd700' }}>Total Investment</div>
+                            <div style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#ffd700' }}>Development Cost</div>
                             <div style={{ fontSize: '2rem' }}>£2,400</div>
-                            <div style={{ fontSize: '0.9rem', opacity: 0.8 }}>One-time payment</div>
+                            <div style={{ fontSize: '0.9rem', opacity: 0.8 }}>Upfront investment</div>
                         </div>
                         <div>
                             <div style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#ffd700' }}>Annual Return</div>
@@ -443,40 +441,40 @@ function App() {
                             <div style={{ fontSize: '0.9rem', opacity: 0.8 }}>Then pure profit</div>
                         </div>
                         <div>
-                            <div style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#ffd700' }}>Ownership</div>
-                            <div style={{ fontSize: '2rem' }}>Lifetime</div>
-                            <div style={{ fontSize: '0.9rem', opacity: 0.8 }}>No recurring fees</div>
+                            <div style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#ffd700' }}>Launch Timeline</div>
+                            <div style={{ fontSize: '2rem' }}>4-6 weeks</div>
+                            <div style={{ fontSize: '0.9rem', opacity: 0.8 }}>From approval</div>
                         </div>
                     </div>
 
                     <div style={{ background: 'rgba(255,255,255,0.1)', padding: '20px', borderRadius: '10px', margin: '20px 0' }}>
-                        <h3 style={{ marginBottom: '15px' }}>Cost Comparison</h3>
+                        <h3 style={{ marginBottom: '15px' }}>Investment Structure</h3>
                         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', textAlign: 'left' }}>
                             <div>
-                                <h4 style={{ color: '#ffd700', marginBottom: '10px' }}>Alternative Solutions Cost:</h4>
+                                <h4 style={{ color: '#ffd700', marginBottom: '10px' }}>Development Investment:</h4>
                                 <ul style={{ listStyle: 'none', padding: 0 }}>
-                                    <li>• Separate donation platform: £50/month</li>
-                                    <li>• Streaming service: £30/month</li>
-                                    <li>• Event management: £25/month</li>
-                                    <li>• Notification service: £15/month</li>
-                                    <li><strong>Total: £120/month = £1,440/year</strong></li>
+                                    <li>• Complete app development</li>
+                                    <li>• All 13 modules included</li>
+                                    <li>• Custom design & features</li>
+                                    <li>• Admin dashboard</li>
+                                    <li><strong>Total: £2,400 upfront</strong></li>
                                 </ul>
                             </div>
                             <div>
-                                <h4 style={{ color: '#ffd700', marginBottom: '10px' }}>Our Complete Solution:</h4>
+                                <h4 style={{ color: '#ffd700', marginBottom: '10px' }}>What You Get:</h4>
                                 <ul style={{ listStyle: 'none', padding: 0 }}>
-                                    <li>• All 13 modules included</li>
-                                    <li>• Custom design & features</li>
-                                    <li>• Complete ownership</li>
-                                    <li>• No monthly fees</li>
-                                    <li><strong>Total: £2,400 one-time</strong></li>
+                                    <li>• Professional mobile application</li>
+                                    <li>• Comprehensive mosque management</li>
+                                    <li>• Modern donation system</li>
+                                    <li>• Community engagement tools</li>
+                                    <li><strong>Ready-to-launch solution</strong></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
 
                     <p style={{ fontSize: '1.2rem', marginBottom: '20px' }}>
-                        This is not money spent. This is <strong>value created</strong> with every penny justified.
+                        This is a strategic <strong>development investment</strong> that creates lasting value for your mosque community.
                     </p>
                     <button className="cta-button">
                         Approve £2,400 Investment <ArrowRight style={{ marginLeft: '10px' }} />
