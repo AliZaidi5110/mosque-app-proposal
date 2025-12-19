@@ -83,6 +83,13 @@ function App() {
             features: ["Quran Audio", "Daily Hadith", "Duas", "Educational Articles"],
             value: "£200",
             justification: "Spiritual engagement, reduces need for printed materials"
+        },
+        {
+            icon: <UserCheck />,
+            title: "Membership Management System",
+            features: ["Monthly Subscription Plans", "Auto-Payment Processing", "Member Tiers & Benefits", "Revenue Tracking"],
+            value: "£300",
+            justification: "Creates recurring revenue stream, automates membership billing"
         }
     ];
 
@@ -93,13 +100,6 @@ function App() {
             features: ["Availability Calendar", "Payment Processing", "Admin Dashboard"],
             value: "£150",
             justification: "Generates rental income, automates booking process"
-        },
-        {
-            icon: <UserCheck />,
-            title: "Digital Membership",
-            features: ["QR Code Cards", "Validation System", "Renewal Reminders"],
-            value: "£100",
-            justification: "Modernizes membership, reduces card printing costs"
         },
         {
             icon: <MessageSquare />,
@@ -114,6 +114,13 @@ function App() {
             features: ["Death Announcements", "Burial Info", "Family Communication"],
             value: "£125",
             justification: "Sensitive community service, reduces communication burden"
+        },
+        {
+            icon: <Award />,
+            title: "Advanced Analytics & Reports",
+            features: ["Member Analytics", "Revenue Reports", "Engagement Metrics", "Growth Insights"],
+            value: "£125",
+            justification: "Data-driven decisions, track membership growth and revenue"
         }
     ];
 
@@ -154,15 +161,15 @@ function App() {
     ];
 
     const costBreakdown = [
-        { item: "Core Development (8 modules)", cost: "£1,850", percentage: "77%" },
-        { item: "Premium Features (4 modules)", cost: "£450", percentage: "19%" },
-        { item: "Admin Dashboard & Testing", cost: "£100", percentage: "4%" }
+        { item: "Core Development (9 modules)", cost: "£2,150", percentage: "76%" },
+        { item: "Premium Features (4 modules)", cost: "£475", percentage: "17%" },
+        { item: "Admin Dashboard & Testing", cost: "£175", percentage: "7%" }
     ];
 
     const features = [
-        { icon: <Smartphone />, title: "13 Complete Modules", desc: "Comprehensive mosque management" },
+        { icon: <Smartphone />, title: "14 Complete Modules", desc: "Comprehensive mosque management + membership" },
         { icon: <Settings />, title: "Admin Dashboard", desc: "Full control and management" },
-        { icon: <Shield />, title: "Secure Payments", desc: "Stripe/PayPal integration" },
+        { icon: <Shield />, title: "Secure Payments", desc: "Stripe/PayPal integration + subscriptions" },
         { icon: <Star />, title: "Custom Design", desc: "Built specifically for your mosque" }
     ];
 
@@ -173,7 +180,7 @@ function App() {
                     <h1>Mosque Mobile Application</h1>
                     <p className="subtitle">Strategic Investment Proposal</p>
                     <div className="investment-highlight">
-                        <div className="investment-amount">£2,400</div>
+                        <div className="investment-amount">£2,800</div>
                         <p>Development investment • Professional solution • Custom built</p>
                     </div>
                 </div>
@@ -193,7 +200,7 @@ function App() {
 
                 <div className="roi-calculator">
                     <h3><Calculator /> Investment Breakdown & ROI</h3>
-                    <p>Detailed cost justification for 13 comprehensive modules:</p>
+                    <p>Detailed cost justification for 14 comprehensive modules including membership system:</p>
                     <div className="roi-breakdown">
                         {costBreakdown.map((item, index) => (
                             <div key={index} className="roi-item">
@@ -205,7 +212,7 @@ function App() {
                             </div>
                         ))}
                         <div className="roi-item" style={{ background: 'linear-gradient(135deg, #2c5530 0%, #1a3d1f 100%)', color: 'white' }}>
-                            <div className="number" style={{ color: '#ffd700' }}>£2,400</div>
+                            <div className="number" style={{ color: '#ffd700' }}>£2,800</div>
                             <div className="label" style={{ color: 'white' }}>Total Investment</div>
                             <div style={{ fontSize: '0.8rem', color: '#ffd700', marginTop: '5px' }}>
                                 Complete Solution
@@ -213,30 +220,33 @@ function App() {
                         </div>
                     </div>
                     <div style={{ marginTop: '30px', padding: '20px', background: 'white', borderRadius: '10px' }}>
-                        <h4 style={{ color: '#2c5530', marginBottom: '15px' }}>Conservative ROI Projection:</h4>
+                        <h4 style={{ color: '#2c5530', marginBottom: '15px' }}>Conservative ROI Projection (Including Membership Revenue):</h4>
                         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '15px' }}>
                             <div style={{ textAlign: 'center' }}>
                                 <div style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#2c5530' }}>50</div>
                                 <div style={{ fontSize: '0.9rem', color: '#666' }}>People donating £5 extra/month</div>
                             </div>
                             <div style={{ textAlign: 'center' }}>
-                                <div style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#2c5530' }}>£250</div>
-                                <div style={{ fontSize: '0.9rem', color: '#666' }}>Additional monthly income</div>
+                                <div style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#2c5530' }}>100</div>
+                                <div style={{ fontSize: '0.9rem', color: '#666' }}>Monthly members at £10/month</div>
                             </div>
                             <div style={{ textAlign: 'center' }}>
-                                <div style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#2c5530' }}>£3,000</div>
-                                <div style={{ fontSize: '0.9rem', color: '#666' }}>Annual return</div>
+                                <div style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#2c5530' }}>£1,250</div>
+                                <div style={{ fontSize: '0.9rem', color: '#666' }}>Combined monthly income</div>
                             </div>
                             <div style={{ textAlign: 'center' }}>
-                                <div style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#2c5530' }}>10 months</div>
+                                <div style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#2c5530' }}>3 months</div>
                                 <div style={{ fontSize: '0.9rem', color: '#666' }}>Payback period</div>
                             </div>
+                        </div>
+                        <div style={{ marginTop: '15px', padding: '15px', background: '#f8f9fa', borderRadius: '8px', textAlign: 'center' }}>
+                            <strong style={{ color: '#2c5530' }}>Annual Revenue Potential: £15,000+ from memberships + donations</strong>
                         </div>
                     </div>
                 </div>
 
                 <div className="section">
-                    <h2><Smartphone /> Core Modules - Every Penny Justified</h2>
+                    <h2><Smartphone /> Core Modules - Every Penny Justified (9 Modules)</h2>
                     <div className="benefits-grid">
                         {coreModules.map((module, index) => (
                             <div key={index} className="benefit-card">
@@ -354,11 +364,11 @@ function App() {
                         </h3>
                         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '15px', textAlign: 'center' }}>
                             <div>
-                                <div style={{ fontSize: '2rem', fontWeight: 'bold', color: '#2c5530' }}>13</div>
+                                <div style={{ fontSize: '2rem', fontWeight: 'bold', color: '#2c5530' }}>14</div>
                                 <div style={{ fontSize: '0.9rem', color: '#666' }}>Complete Modules</div>
                             </div>
                             <div>
-                                <div style={{ fontSize: '2rem', fontWeight: 'bold', color: '#2c5530' }}>50+</div>
+                                <div style={{ fontSize: '2rem', fontWeight: 'bold', color: '#2c5530' }}>60+</div>
                                 <div style={{ fontSize: '0.9rem', color: '#666' }}>Individual Features</div>
                             </div>
                             <div>
@@ -427,18 +437,18 @@ function App() {
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '20px', margin: '30px 0' }}>
                         <div>
                             <div style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#ffd700' }}>Development Cost</div>
-                            <div style={{ fontSize: '2rem' }}>£2,400</div>
+                            <div style={{ fontSize: '2rem' }}>£2,800</div>
                             <div style={{ fontSize: '0.9rem', opacity: 0.8 }}>Upfront investment</div>
                         </div>
                         <div>
-                            <div style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#ffd700' }}>Annual Return</div>
-                            <div style={{ fontSize: '2rem' }}>£3,000+</div>
+                            <div style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#ffd700' }}>Annual Revenue</div>
+                            <div style={{ fontSize: '2rem' }}>£15,000+</div>
                             <div style={{ fontSize: '0.9rem', opacity: 0.8 }}>Conservative estimate</div>
                         </div>
                         <div>
                             <div style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#ffd700' }}>Payback Period</div>
-                            <div style={{ fontSize: '2rem' }}>10 months</div>
-                            <div style={{ fontSize: '0.9rem', opacity: 0.8 }}>Then pure profit</div>
+                            <div style={{ fontSize: '2rem' }}>3 months</div>
+                            <div style={{ fontSize: '0.9rem', opacity: 0.8 }}>With membership system</div>
                         </div>
                         <div>
                             <div style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#ffd700' }}>Launch Timeline</div>
@@ -454,20 +464,20 @@ function App() {
                                 <h4 style={{ color: '#ffd700', marginBottom: '10px' }}>Development Investment:</h4>
                                 <ul style={{ listStyle: 'none', padding: 0 }}>
                                     <li>• Complete app development</li>
-                                    <li>• All 13 modules included</li>
-                                    <li>• Custom design & features</li>
+                                    <li>• All 14 modules included</li>
+                                    <li>• Membership subscription system</li>
                                     <li>• Admin dashboard</li>
-                                    <li><strong>Total: £2,400 upfront</strong></li>
+                                    <li><strong>Total: £2,800 upfront</strong></li>
                                 </ul>
                             </div>
                             <div>
-                                <h4 style={{ color: '#ffd700', marginBottom: '10px' }}>What You Get:</h4>
+                                <h4 style={{ color: '#ffd700', marginBottom: '10px' }}>Revenue Features:</h4>
                                 <ul style={{ listStyle: 'none', padding: 0 }}>
-                                    <li>• Professional mobile application</li>
-                                    <li>• Comprehensive mosque management</li>
-                                    <li>• Modern donation system</li>
-                                    <li>• Community engagement tools</li>
-                                    <li><strong>Ready-to-launch solution</strong></li>
+                                    <li>• Monthly membership subscriptions</li>
+                                    <li>• Automated payment processing</li>
+                                    <li>• Donation management system</li>
+                                    <li>• Member benefits & tiers</li>
+                                    <li><strong>Recurring revenue stream</strong></li>
                                 </ul>
                             </div>
                         </div>
@@ -477,7 +487,7 @@ function App() {
                         This is a strategic <strong>development investment</strong> that creates lasting value for your mosque community.
                     </p>
                     <button className="cta-button">
-                        Approve £2,400 Investment <ArrowRight style={{ marginLeft: '10px' }} />
+                        Approve £2,800 Investment <ArrowRight style={{ marginLeft: '10px' }} />
                     </button>
                 </div>
             </div>
