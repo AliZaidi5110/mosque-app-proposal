@@ -32,56 +32,56 @@ function App() {
             icon: <Clock />,
             title: "Prayer Timetable Module",
             features: ["Daily/Weekly/Monthly Views", "Auto Location Updates", "Prayer Notifications", "Calculation Methods"],
-            value: "£300",
+            value: "£250",
             justification: "Replaces manual timetable updates, reduces enquiries by 80%"
         },
         {
             icon: <Video />,
             title: "Live Stream & Media Center",
             features: ["Live Jumu'ah", "Event Streaming", "Video/Audio Library", "Archive System"],
-            value: "£400",
+            value: "£350",
             justification: "Eliminates need for separate streaming platform (£50/month saved)"
         },
         {
             icon: <Calendar />,
             title: "Events & Activities Calendar",
             features: ["Event Listings", "Youth Programs", "Madrasa Timetables", "RSVP System"],
-            value: "£250",
+            value: "£200",
             justification: "Reduces printing costs, improves attendance by 40%"
         },
         {
             icon: <CreditCard />,
             title: "Donations & Charity Module",
             features: ["Multiple Categories", "One-Click Donations", "Receipts", "Subscriptions"],
-            value: "£500",
+            value: "£400",
             justification: "Increases donations by 60%, saves processing time"
         },
         {
             icon: <Bell />,
             title: "Push Notifications Center",
             features: ["Prayer Adjustments", "Janazah Notices", "Emergency Alerts", "Event Reminders"],
-            value: "£200",
+            value: "£150",
             justification: "Instant communication, reduces missed announcements"
         },
         {
             icon: <BookOpen />,
             title: "Madrasa Portal",
             features: ["Student Dashboard", "Attendance", "Homework", "Parent Communication"],
-            value: "£350",
+            value: "£300",
             justification: "Streamlines education management, saves 10 hours/week"
         },
         {
             icon: <Compass />,
             title: "Qiblah & Halal Guide",
             features: ["Qiblah Compass", "Nearby Mosques", "Halal Restaurants", "Location Filters"],
-            value: "£150",
+            value: "£100",
             justification: "Community service enhancement, attracts visitors"
         },
         {
             icon: <FileText />,
             title: "Islamic Content Library",
             features: ["Quran Audio", "Daily Hadith", "Duas", "Educational Articles"],
-            value: "£200",
+            value: "£150",
             justification: "Spiritual engagement, reduces need for printed materials"
         },
         {
@@ -98,28 +98,28 @@ function App() {
             icon: <Building />,
             title: "Room & Hall Booking",
             features: ["Availability Calendar", "Payment Processing", "Admin Dashboard"],
-            value: "£150",
+            value: "£100",
             justification: "Generates rental income, automates booking process"
         },
         {
             icon: <MessageSquare />,
             title: "Community Polls & Decisions",
             features: ["Vote Creation", "Multiple Choice", "Results Display"],
-            value: "£75",
+            value: "£50",
             justification: "Democratic engagement, transparent decision making"
         },
         {
             icon: <Heart />,
             title: "Enhanced Janazah Module",
             features: ["Death Announcements", "Burial Info", "Family Communication"],
-            value: "£125",
+            value: "£75",
             justification: "Sensitive community service, reduces communication burden"
         },
         {
             icon: <Award />,
             title: "Advanced Analytics & Reports",
             features: ["Member Analytics", "Revenue Reports", "Engagement Metrics", "Growth Insights"],
-            value: "£125",
+            value: "£75",
             justification: "Data-driven decisions, track membership growth and revenue"
         }
     ];
@@ -161,9 +161,9 @@ function App() {
     ];
 
     const costBreakdown = [
-        { item: "Core Development (9 modules)", cost: "£2,150", percentage: "76%" },
-        { item: "Premium Features (4 modules)", cost: "£475", percentage: "17%" },
-        { item: "Admin Dashboard & Testing", cost: "£175", percentage: "7%" }
+        { item: "Core Development (9 modules)", cost: "£2,100", percentage: "87.5%" },
+        { item: "Premium Features (4 modules)", cost: "£300", percentage: "12.5%" },
+        { item: "Admin Dashboard & Testing", cost: "Included", percentage: "0%" }
     ];
 
     const features = [
@@ -180,7 +180,7 @@ function App() {
                     <h1>Mosque Mobile Application</h1>
                     <p className="subtitle">Strategic Investment Proposal</p>
                     <div className="investment-highlight">
-                        <div className="investment-amount">£2,800</div>
+                        <div className="investment-amount">£2,400</div>
                         <p>Development investment • Professional solution • Custom built</p>
                     </div>
                 </div>
@@ -188,12 +188,12 @@ function App() {
                 <div className="section">
                     <h2><Target /> Executive Summary</h2>
                     <p>
-                        The £2,400 proposed for the mosque mobile application is a <strong>development investment</strong> 
-                        that creates a comprehensive digital solution for your mosque's operational efficiency, 
+                        The £2,400 proposed for the mosque mobile application is a <strong>development investment</strong>
+                        that creates a comprehensive digital solution for your mosque's operational efficiency,
                         financial sustainability, community engagement, and long-term growth.
                     </p>
                     <p>
-                        This investment delivers a complete, custom-built mobile application with 13 integrated 
+                        This investment delivers a complete, custom-built mobile application with 13 integrated
                         modules that will transform how your mosque operates and engages with the community.
                     </p>
                 </div>
@@ -212,7 +212,7 @@ function App() {
                             </div>
                         ))}
                         <div className="roi-item" style={{ background: 'linear-gradient(135deg, #2c5530 0%, #1a3d1f 100%)', color: 'white' }}>
-                            <div className="number" style={{ color: '#ffd700' }}>£2,800</div>
+                            <div className="number" style={{ color: '#ffd700' }}>£2,400</div>
                             <div className="label" style={{ color: 'white' }}>Total Investment</div>
                             <div style={{ fontSize: '0.8rem', color: '#ffd700', marginTop: '5px' }}>
                                 Complete Solution
@@ -241,6 +241,10 @@ function App() {
                         </div>
                         <div style={{ marginTop: '15px', padding: '15px', background: '#f8f9fa', borderRadius: '8px', textAlign: 'center' }}>
                             <strong style={{ color: '#2c5530' }}>Annual Revenue Potential: £15,000+ from memberships + donations</strong>
+                            <br />
+                            <span style={{ fontSize: '0.9rem', color: '#666', marginTop: '5px' }}>
+                                ROI: 525% return on £2,400 investment
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -304,7 +308,7 @@ function App() {
                     <div style={{ background: '#f8f9fa', padding: '25px', borderRadius: '15px', borderLeft: '5px solid #2c5530' }}>
                         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '20px' }}>
                             <div>
-                                <h4 style={{ color: '#2c5530', marginBottom: '15px' }}>Complete Web Dashboard - £100</h4>
+                                <h4 style={{ color: '#2c5530', marginBottom: '15px' }}>Complete Web Dashboard - Included</h4>
                                 <ul style={{ listStyle: 'none', padding: 0 }}>
                                     {adminFeatures.map((feature, index) => (
                                         <li key={index} style={{ padding: '5px 0', fontSize: '0.9rem' }}>
@@ -316,7 +320,7 @@ function App() {
                             <div style={{ padding: '20px', background: 'white', borderRadius: '10px' }}>
                                 <h4 style={{ color: '#2c5530', marginBottom: '10px' }}>Value Justification</h4>
                                 <p style={{ fontSize: '0.9rem', color: '#666', marginBottom: '10px' }}>
-                                    Professional admin panel that would cost £500+ separately
+                                    Professional admin panel included in base price
                                 </p>
                                 <p style={{ fontSize: '0.9rem', color: '#666' }}>
                                     Saves 20+ hours monthly in manual management tasks
@@ -437,7 +441,7 @@ function App() {
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '20px', margin: '30px 0' }}>
                         <div>
                             <div style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#ffd700' }}>Development Cost</div>
-                            <div style={{ fontSize: '2rem' }}>£2,800</div>
+                            <div style={{ fontSize: '2rem' }}>£2,400</div>
                             <div style={{ fontSize: '0.9rem', opacity: 0.8 }}>Upfront investment</div>
                         </div>
                         <div>
@@ -467,7 +471,7 @@ function App() {
                                     <li>• All 14 modules included</li>
                                     <li>• Membership subscription system</li>
                                     <li>• Admin dashboard</li>
-                                    <li><strong>Total: £2,800 upfront</strong></li>
+                                    <li><strong>Total: £2,400 upfront</strong></li>
                                 </ul>
                             </div>
                             <div>
@@ -487,7 +491,7 @@ function App() {
                         This is a strategic <strong>development investment</strong> that creates lasting value for your mosque community.
                     </p>
                     <button className="cta-button">
-                        Approve £2,800 Investment <ArrowRight style={{ marginLeft: '10px' }} />
+                        Approve £2,400 Investment <ArrowRight style={{ marginLeft: '10px' }} />
                     </button>
                 </div>
             </div>
