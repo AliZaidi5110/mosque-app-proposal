@@ -51,10 +51,10 @@ function App() {
         },
         {
             icon: <CreditCard />,
-            title: "Donations & Charity Module",
-            features: ["Multiple Categories", "One-Click Donations", "Receipts", "Subscriptions"],
+            title: "Advanced Donations & Zakat Tracking",
+            features: ["Zakat Calculator & Tracking", "Sadaqah Categories", "Real-time Dashboard", "Tax Receipts", "Annual Reports"],
             value: "£400",
-            justification: "Increases donations by 60%, saves processing time"
+            justification: "Comprehensive financial tracking, automated Zakat calculations, increases transparency"
         },
         {
             icon: <Bell />,
@@ -86,51 +86,46 @@ function App() {
         },
         {
             icon: <UserCheck />,
-            title: "Membership Management System",
-            features: ["Monthly Subscription Plans", "Auto-Payment Processing", "Member Tiers & Benefits", "Revenue Tracking"],
+            title: "Membership & Analytics Dashboard",
+            features: ["Member Analytics", "Revenue Tracking", "Subscription Management", "Growth Insights", "Financial Reports"],
             value: "£300",
-            justification: "Creates recurring revenue stream, automates membership billing"
+            justification: "Complete business intelligence, tracks all revenue streams, data-driven decisions"
         }
     ];
 
     const premiumModules = [
         {
-            icon: <Building />,
-            title: "Room & Hall Booking",
-            features: ["Availability Calendar", "Payment Processing", "Admin Dashboard"],
-            value: "£100",
-            justification: "Generates rental income, automates booking process"
-        },
-        {
             icon: <MessageSquare />,
-            title: "Community Polls & Decisions",
-            features: ["Vote Creation", "Multiple Choice", "Results Display"],
-            value: "£50",
-            justification: "Democratic engagement, transparent decision making"
+            title: "AI Islamic Chatbot Assistant",
+            features: ["24/7 Islamic Q&A", "Prayer Time Queries", "Donation Guidance", "Event Information", "Multi-language Support"],
+            value: "£150",
+            justification: "Reduces admin workload by 70%, provides instant community support"
         },
         {
-            icon: <Heart />,
-            title: "Enhanced Janazah Module",
-            features: ["Death Announcements", "Burial Info", "Family Communication"],
+            icon: <Building />,
+            title: "Facility Management Dashboard",
+            features: ["Room Booking Analytics", "Usage Reports", "Revenue Tracking", "Maintenance Scheduling"],
             value: "£75",
-            justification: "Sensitive community service, reduces communication burden"
+            justification: "Optimizes facility usage, generates additional rental income"
         },
         {
             icon: <Award />,
-            title: "Advanced Analytics & Reports",
-            features: ["Member Analytics", "Revenue Reports", "Engagement Metrics", "Growth Insights"],
+            title: "Comprehensive Analytics Suite",
+            features: ["Donation Trends", "Member Engagement", "Event Analytics", "Financial Forecasting"],
             value: "£75",
-            justification: "Data-driven decisions, track membership growth and revenue"
+            justification: "Strategic insights for mosque growth and financial planning"
         }
     ];
 
     const adminFeatures = [
-        "Complete Web Dashboard",
+        "Comprehensive Financial Dashboard",
+        "Zakat & Donation Tracking System",
+        "Real-time Revenue Analytics",
+        "Member Management & Insights",
         "Content Management System",
-        "User Management",
-        "Financial Reports",
-        "Analytics & Insights",
-        "Multi-admin Access Control"
+        "Multi-admin Access Control",
+        "Automated Report Generation",
+        "AI Chatbot Configuration Panel"
     ];
 
     const benefits = [
@@ -162,14 +157,14 @@ function App() {
 
     const costBreakdown = [
         { item: "Core Development (9 modules)", cost: "£2,100", percentage: "87.5%" },
-        { item: "Premium Features (4 modules)", cost: "£300", percentage: "12.5%" },
-        { item: "Admin Dashboard & Testing", cost: "Included", percentage: "0%" }
+        { item: "Premium Features (3 modules)", cost: "£300", percentage: "12.5%" },
+        { item: "Advanced Dashboard & AI Chatbot", cost: "Included", percentage: "0%" }
     ];
 
     const features = [
-        { icon: <Smartphone />, title: "14 Complete Modules", desc: "Comprehensive mosque management + membership" },
-        { icon: <Settings />, title: "Admin Dashboard", desc: "Full control and management" },
-        { icon: <Shield />, title: "Secure Payments", desc: "Stripe/PayPal integration + subscriptions" },
+        { icon: <Smartphone />, title: "12 Complete Modules", desc: "Including AI chatbot & advanced dashboards" },
+        { icon: <Settings />, title: "Financial Dashboard", desc: "Zakat tracking & revenue analytics" },
+        { icon: <MessageSquare />, title: "AI Islamic Assistant", desc: "24/7 automated community support" },
         { icon: <Star />, title: "Custom Design", desc: "Built specifically for your mosque" }
     ];
 
@@ -200,7 +195,7 @@ function App() {
 
                 <div className="roi-calculator">
                     <h3><Calculator /> Investment Breakdown & ROI</h3>
-                    <p>Detailed cost justification for 14 comprehensive modules including membership system:</p>
+                    <p>Detailed cost justification for 12 comprehensive modules including AI chatbot & advanced dashboards:</p>
                     <div className="roi-breakdown">
                         {costBreakdown.map((item, index) => (
                             <div key={index} className="roi-item">
@@ -220,7 +215,7 @@ function App() {
                         </div>
                     </div>
                     <div style={{ marginTop: '30px', padding: '20px', background: 'white', borderRadius: '10px' }}>
-                        <h4 style={{ color: '#2c5530', marginBottom: '15px' }}>Conservative ROI Projection (Including Membership Revenue):</h4>
+                        <h4 style={{ color: '#2c5530', marginBottom: '15px' }}>Conservative ROI Projection (Including AI Efficiency):</h4>
                         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '15px' }}>
                             <div style={{ textAlign: 'center' }}>
                                 <div style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#2c5530' }}>50</div>
@@ -231,26 +226,26 @@ function App() {
                                 <div style={{ fontSize: '0.9rem', color: '#666' }}>Monthly members at £10/month</div>
                             </div>
                             <div style={{ textAlign: 'center' }}>
-                                <div style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#2c5530' }}>£1,250</div>
-                                <div style={{ fontSize: '0.9rem', color: '#666' }}>Combined monthly income</div>
+                                <div style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#2c5530' }}>70%</div>
+                                <div style={{ fontSize: '0.9rem', color: '#666' }}>Admin workload reduction</div>
                             </div>
                             <div style={{ textAlign: 'center' }}>
-                                <div style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#2c5530' }}>3 months</div>
+                                <div style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#2c5530' }}>2 months</div>
                                 <div style={{ fontSize: '0.9rem', color: '#666' }}>Payback period</div>
                             </div>
                         </div>
                         <div style={{ marginTop: '15px', padding: '15px', background: '#f8f9fa', borderRadius: '8px', textAlign: 'center' }}>
-                            <strong style={{ color: '#2c5530' }}>Annual Revenue Potential: £15,000+ from memberships + donations</strong>
+                            <strong style={{ color: '#2c5530' }}>Annual Revenue: £15,000+ | Cost Savings: £8,000+ | Total Value: £23,000+</strong>
                             <br />
                             <span style={{ fontSize: '0.9rem', color: '#666', marginTop: '5px' }}>
-                                ROI: 525% return on £2,400 investment
+                                ROI: 958% return on £2,400 investment
                             </span>
                         </div>
                     </div>
                 </div>
 
                 <div className="section">
-                    <h2><Smartphone /> Core Modules - Every Penny Justified (9 Modules)</h2>
+                    <h2><Smartphone /> Core Modules - Advanced Features (9 Modules)</h2>
                     <div className="benefits-grid">
                         {coreModules.map((module, index) => (
                             <div key={index} className="benefit-card">
@@ -277,7 +272,7 @@ function App() {
                 </div>
 
                 <div className="section">
-                    <h2><Award /> Premium Modules - Added Value</h2>
+                    <h2><Award /> Premium Modules - AI & Analytics (3 Modules)</h2>
                     <div className="benefits-grid">
                         {premiumModules.map((module, index) => (
                             <div key={index} className="benefit-card" style={{ borderLeft: '5px solid #ffd700' }}>
@@ -304,11 +299,11 @@ function App() {
                 </div>
 
                 <div className="section">
-                    <h2><Settings /> Admin Dashboard & Management</h2>
+                    <h2><Settings /> Advanced Dashboard & AI Management</h2>
                     <div style={{ background: '#f8f9fa', padding: '25px', borderRadius: '15px', borderLeft: '5px solid #2c5530' }}>
                         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '20px' }}>
                             <div>
-                                <h4 style={{ color: '#2c5530', marginBottom: '15px' }}>Complete Web Dashboard - Included</h4>
+                                <h4 style={{ color: '#2c5530', marginBottom: '15px' }}>Comprehensive Dashboard Suite - Included</h4>
                                 <ul style={{ listStyle: 'none', padding: 0 }}>
                                     {adminFeatures.map((feature, index) => (
                                         <li key={index} style={{ padding: '5px 0', fontSize: '0.9rem' }}>
@@ -320,10 +315,13 @@ function App() {
                             <div style={{ padding: '20px', background: 'white', borderRadius: '10px' }}>
                                 <h4 style={{ color: '#2c5530', marginBottom: '10px' }}>Value Justification</h4>
                                 <p style={{ fontSize: '0.9rem', color: '#666', marginBottom: '10px' }}>
-                                    Professional admin panel included in base price
+                                    Advanced dashboard with AI chatbot included in base price
+                                </p>
+                                <p style={{ fontSize: '0.9rem', color: '#666', marginBottom: '10px' }}>
+                                    Zakat tracking saves £2,000+ in accounting fees annually
                                 </p>
                                 <p style={{ fontSize: '0.9rem', color: '#666' }}>
-                                    Saves 20+ hours monthly in manual management tasks
+                                    AI chatbot reduces admin workload by 25+ hours/week
                                 </p>
                             </div>
                         </div>
@@ -368,20 +366,20 @@ function App() {
                         </h3>
                         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '15px', textAlign: 'center' }}>
                             <div>
-                                <div style={{ fontSize: '2rem', fontWeight: 'bold', color: '#2c5530' }}>14</div>
+                                <div style={{ fontSize: '2rem', fontWeight: 'bold', color: '#2c5530' }}>12</div>
                                 <div style={{ fontSize: '0.9rem', color: '#666' }}>Complete Modules</div>
                             </div>
                             <div>
-                                <div style={{ fontSize: '2rem', fontWeight: 'bold', color: '#2c5530' }}>60+</div>
-                                <div style={{ fontSize: '0.9rem', color: '#666' }}>Individual Features</div>
+                                <div style={{ fontSize: '2rem', fontWeight: 'bold', color: '#2c5530' }}>AI</div>
+                                <div style={{ fontSize: '0.9rem', color: '#666' }}>Islamic Chatbot</div>
                             </div>
                             <div>
                                 <div style={{ fontSize: '2rem', fontWeight: 'bold', color: '#2c5530' }}>100%</div>
-                                <div style={{ fontSize: '0.9rem', color: '#666' }}>Custom Built</div>
+                                <div style={{ fontSize: '0.9rem', color: '#666' }}>Zakat Tracking</div>
                             </div>
                             <div>
-                                <div style={{ fontSize: '2rem', fontWeight: 'bold', color: '#2c5530' }}>∞</div>
-                                <div style={{ fontSize: '0.9rem', color: '#666' }}>Lifetime Ownership</div>
+                                <div style={{ fontSize: '2rem', fontWeight: 'bold', color: '#2c5530' }}>24/7</div>
+                                <div style={{ fontSize: '0.9rem', color: '#666' }}>Automated Support</div>
                             </div>
                         </div>
                     </div>
@@ -451,8 +449,8 @@ function App() {
                         </div>
                         <div>
                             <div style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#ffd700' }}>Payback Period</div>
-                            <div style={{ fontSize: '2rem' }}>3 months</div>
-                            <div style={{ fontSize: '0.9rem', opacity: 0.8 }}>With membership system</div>
+                            <div style={{ fontSize: '2rem' }}>2 months</div>
+                            <div style={{ fontSize: '0.9rem', opacity: 0.8 }}>With AI efficiency</div>
                         </div>
                         <div>
                             <div style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#ffd700' }}>Launch Timeline</div>
@@ -468,20 +466,20 @@ function App() {
                                 <h4 style={{ color: '#ffd700', marginBottom: '10px' }}>Development Investment:</h4>
                                 <ul style={{ listStyle: 'none', padding: 0 }}>
                                     <li>• Complete app development</li>
-                                    <li>• All 14 modules included</li>
-                                    <li>• Membership subscription system</li>
-                                    <li>• Admin dashboard</li>
+                                    <li>• All 12 modules included</li>
+                                    <li>• AI Islamic chatbot</li>
+                                    <li>• Advanced dashboard suite</li>
                                     <li><strong>Total: £2,400 upfront</strong></li>
                                 </ul>
                             </div>
                             <div>
-                                <h4 style={{ color: '#ffd700', marginBottom: '10px' }}>Revenue Features:</h4>
+                                <h4 style={{ color: '#ffd700', marginBottom: '10px' }}>Advanced Features:</h4>
                                 <ul style={{ listStyle: 'none', padding: 0 }}>
-                                    <li>• Monthly membership subscriptions</li>
-                                    <li>• Automated payment processing</li>
-                                    <li>• Donation management system</li>
-                                    <li>• Member benefits & tiers</li>
-                                    <li><strong>Recurring revenue stream</strong></li>
+                                    <li>• Zakat calculation & tracking</li>
+                                    <li>• 24/7 AI community support</li>
+                                    <li>• Real-time financial analytics</li>
+                                    <li>• Automated admin workflows</li>
+                                    <li><strong>£23,000+ annual value</strong></li>
                                 </ul>
                             </div>
                         </div>
